@@ -1,0 +1,297 @@
+/* Base Style CSS Start */
+
+/* Font */
+@font-face {
+  font-family: DiodrumArabic;
+  src: url(../font/DiodrumArabic-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: DiodrumArabic;
+  src: url(../font/DiodrumArabic-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: DiodrumArabic;
+  src: url(../font/DiodrumArabic-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: DiodrumArabic;
+  src: url(../font/DiodrumArabic-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: DiodrumArabic;
+  src: url(../font/DiodrumArabic-Bold.ttf);
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: DiodrumArabic;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2.title {
+  font-size: 48px;
+  color: #352110;
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1650px;
+  }
+}
+
+/* Base Style CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+.ezdan-navigation-wrapper {
+  position: relative;
+  padding: 40px 0;
+  z-index: 99;
+}
+
+/* Header Part CSS End */
+
+/* .ezdan-navigation-wrapper.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-animation: sticky 1.2s;
+  animation: sticky 1.2s;
+}
+
+@keyframes sticky {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+} */
+
+.ezdan-main-nav li {
+  padding-left: 25px;
+}
+
+.ezdan-main-nav li a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.ezdan-left-menu ul li {
+  padding-right: 23px;
+}
+
+.ezdan-left-menu ul li a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.ezdan-logo {
+  max-width: 125px;
+}
+
+@media (max-width: 1200px) {
+  .ezdan-navigation-wrapper {
+    position: initial;
+    padding: 25px 10px;
+    background: #f7f2ed;
+  }
+
+  .ezdan-main-nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 30px;
+    background: #fff;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .ezdan-main-nav.active {
+    right: 0;
+  }
+
+  .ezdan-main-nav li a,
+  .ezdan-left-menu ul li i {
+    color: #342110;
+  }
+
+  .ezdan-main-menu ul li {
+    padding-left: 12px;
+  }
+
+  .ezdan-main-menu ul li i {
+    color: #342110;
+  }
+
+  #bar {
+    cursor: pointer;
+  }
+
+  .ezdan-left-menu ul li {
+    padding-right: 12px;
+  }
+
+  #cross {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .ezdan-hero-wrapper {
+    margin-top: 0 !important;
+  }
+}
+
+/* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+.ezdan-hero-wrapper {
+  position: relative;
+  margin-top: -170px;
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1050px;
+}
+
+.slide-1 {
+  background: url(../images/hero-slider-img1.png);
+}
+
+.slide-2 {
+  background: url(../images/hero-slider-img2.png);
+}
+
+.slide-3 {
+  background: url(../images/hero-slider-img3.png);
+}
+
+.ezdan-slider-conent {
+  padding-top: 300px;
+}
+
+.ezdan-slider-conent h2 {
+  font-size: 72px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ezdan-slider-conent p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.ezdan-hero-btn {
+  padding-top: 40px;
+}
+
+.ezdan-hero-btn a {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  background: #d7421d;
+  padding: 0 35px 20px;
+}
+
+.owl-dots.disabled,
+.owl-nav.disabled {
+  display: block !important;
+}
+
+.ezdan-hero-slider .owl-prev {
+  position: absolute;
+  top: 40%;
+  right: 50px;
+}
+
+.ezdan-hero-slider .owl-next {
+  position: absolute;
+  top: 40%;
+  left: 50px;
+}
+
+.owl-prev i,
+.owl-next i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background: none !important;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+}
+
+.owl-dot span {
+  background: #ffffff9d !important;
+}
+
+.owl-dot.active span {
+  background: #fff !important;
+}
+
+/* Hero Section CSS End */
