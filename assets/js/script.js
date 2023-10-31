@@ -14,10 +14,10 @@ cross.addEventListener("click", () => {
 
 // // JavaScript For Sticky Header
 
-// window.addEventListener("scroll", function () {
-//   const header = document.querySelector(".ezdan-navigation-wrapper");
-//   header.classList.toggle("sticky", window.scrollY > 100);
-// });
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".ezdan-navigation-wrapper");
+  header.classList.toggle("sticky", window.scrollY > 100);
+});
 
 // Home Hero Slider JavaScript
 
@@ -33,4 +33,32 @@ $(".ezdan-hero-slider").owlCarousel({
     '<i class="fa-solid fa-chevron-right"></i>',
     '<i class="fa-solid fa-chevron-left"></i>',
   ],
+});
+
+// Coffee Slider JavaScript
+
+$(".ezdan-coffee-slider").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  dots: false,
+  rtl: true,
+  items: 5,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  responsive:{
+    0:{
+        items:2,
+        nav:true
+    },
+    600:{
+        items:3,
+        nav:false
+    },
+    1000:{
+        items:4,
+        nav:true,
+        loop:false
+    }
+}
 });
