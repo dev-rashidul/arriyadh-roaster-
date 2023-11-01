@@ -21,7 +21,23 @@ window.addEventListener("scroll", function () {
 
 // Home Hero Slider JavaScript
 
-$(".owl-carousel").owlCarousel({
+$(".ezdan-hero-slider").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  rtl: true,
+  items: 1,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  navText: [
+    '<i class="fa-solid fa-chevron-right"></i>',
+    '<i class="fa-solid fa-chevron-left"></i>',
+  ],
+});
+
+// Product Hero Slider JavaScript
+
+$(".ezdan-product-hero-slider").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
@@ -49,16 +65,15 @@ $(".ezdan-coffee-slider").owlCarousel({
   responsive:{
     0:{
         items:2,
-        nav:true
     },
     600:{
         items:3,
-        nav:false
     },
     1000:{
         items:4,
-        nav:true,
-        loop:false
+    },
+    1200:{
+        items:5,
     }
 }
 });
